@@ -1,0 +1,24 @@
+{
+  "tailwindCSS.experimental.configFile": "app/assets/css/tailwind.css",
+  "tailwindCSS.includeLanguages": {
+    "vue": "html",
+    "javascript": "javascript",
+    "typescript": "javascript"
+  },
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.hg/**",
+    "**/.svn/**"
+  ],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list"
+  ],
+  "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}

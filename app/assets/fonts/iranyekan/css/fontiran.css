@@ -1,0 +1,214 @@
+/**
+*
+*	Name:			IRANYekanX Fonts
+*	Version:			2.4
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Aug 02, 2022
+*	Updated on:		Aug 02, 2022
+*	Website:			http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت ایران یکان X  یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRANYekanX fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+------------------------------------------------------------------------------------- fonts/-
+*	
+**/
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../ttf/IRANYekanX-Thin.ttf") format("ttf"),
+    url("../woff/IRANYekanX-Thin.woff") format("woff"),
+    url("../woff2/IRANYekanX-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../ttf/IRANYekanX-UltraLight.ttf") format("ttf"),
+    url("../woff/IRANYekanX-UltraLight.woff") format("woff"),
+    url("../woff2/IRANYekanX-UltraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../ttf/IRANYekanX-Light.ttf") format("ttf"),
+    url("../woff/IRANYekanX-Light.woff") format("woff"),
+    url("../woff2/IRANYekanX-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../ttf/IRANYekanX-Medium.ttf") format("ttf"),
+    url("../woff/IRANYekanX-Medium.woff") format("woff"),
+    url("../woff2/IRANYekanX-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../ttf/IRANYekanX-DemiBold.ttf") format("ttf"),
+    url("../woff/IRANYekanX-DemiBold.woff") format("woff"),
+    url("../woff2/IRANYekanX-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../ttf/IRANYekanX-ExtraBold.ttf") format("ttf"),
+    url("../woff/IRANYekanX-ExtraBold.woff") format("woff"),
+    url("../woff2/IRANYekanX-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../ttf/IRANYekanX-Black.ttf") format("ttf"),
+    url("../woff/IRANYekanX-Black.woff") format("woff"),
+    url("../woff2/IRANYekanX-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 950;
+  src: url("../ttf/IRANYekanX-ExtraBlack.ttf") format("ttf"),
+    url("../woff/IRANYekanX-ExtraBlack.woff") format("woff"),
+    url("../woff2/IRANYekanX-ExtraBlack.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 1000;
+  src: url("../ttf/IRANYekanX-Heavy.ttf") format("ttf"),
+    url("../woff/IRANYekanX-Heavy.woff") format("woff"),
+    url("../woff2/IRANYekanX-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../ttf/IRANYekanX-Bold.ttf") format("ttf"),
+    url("../woff/IRANYekanX-Bold.woff") format("woff"),
+    url("../woff2/IRANYekanX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../ttf/IRANYekanX-Regular.ttf") format("ttf"),
+    url("../woff/IRANYekanX-Regular.woff") format("woff"),
+    url("../woff2/IRANYekanX-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../ttf/IRANYekanXFaNum-Thin.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-Thin.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../ttf/IRANYekanXFaNum-UltraLight.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-UltraLight.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-UltraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../ttf/IRANYekanXFaNum-Light.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-Light.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../ttf/IRANYekanXFaNum-Medium.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-Medium.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../ttf/IRANYekanXFaNum-DemiBold.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-DemiBold.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../ttf/IRANYekanXFaNum-ExtraBold.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-ExtraBold.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../ttf/IRANYekanXFaNum-Black.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-Black.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 950;
+  src: url("../ttf/IRANYekanXFaNum-ExtraBlack.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-ExtraBlack.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-ExtraBlack.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: 1000;
+  src: url("../ttf/IRANYekanXFaNum-Heavy.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-Heavy.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../ttf/IRANYekanXFaNum-Bold.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-Bold.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanXFaNum;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../ttf/IRANYekanXFaNum-Regular.ttf") format("ttf"),
+    url("../woff/IRANYekanXFaNum-Regular.woff") format("woff"),
+    url("../woff2/IRANYekanXFaNum-Regular.woff2") format("woff2");
+}
