@@ -79,6 +79,21 @@ export const shebaCodeCheck = (code: string): boolean => {
   return mod97 === BigInt(1);
 };
 
+export const convertPersianNumberToDigits = (event: InputEvent) => {
+  const target = event.target as HTMLInputElement;
+  const value = target.value;
+  const new_value = value.replace(/[۰-۹]/g, (d) =>
+    "۰۱۲۳۴۵۶۷۸۹".indexOf(d).toString(),
+  );
+
+  if (new_value !== value) {
+    target.value = new_value;
+    target.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
+  return target.value;
+};
+
 export const postalCodeCheck = (code: string): boolean => {
   return /^\d{10}$/.test(code);
 };
@@ -86,14 +101,10 @@ export const postalCodeCheck = (code: string): boolean => {
 export const copyToClipboard = (value: any) => {
   navigator.clipboard.writeText(value).then(
     function () {
-      toast.success("Event has been created", {
-        description: "کپی شد",
-      });
+      toast.success("کپی شد");
     },
     function (err) {
-      toast.error("Event has been created", {
-        description: "خطا در کپی",
-      });
+      toast.error("خطا در کپی");
     },
   );
 };
@@ -225,4 +236,13 @@ export const truncateCenterString = (value: string, size: number) => {
   return (
     value.substring(0, start) + "..." + value.substring(value.length - end)
   );
+};
+
+export const secondsToMinutsSeconds = (seconds: number) => {
+  // seconds to mm:ss
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  return `${minutes.toString().padStart(2, "0")}:${remainingSeconds
+    .toString()
+    .padStart(2, "0")}`;
 };

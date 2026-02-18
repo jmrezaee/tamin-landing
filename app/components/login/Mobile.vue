@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 
+const { isMobile } = useDevice();
+const router = useRouter();
 const loader = useLoader();
 
 const otp_status = ref(false);
@@ -53,7 +55,13 @@ const onSubmit = handleSubmit(async (data) => {
   if (!otp_status.value) {
     await authorization.requestOtp({ mobile: data.mobile }).then((res) => {
       if (res) {
-        values.code = undefined;
+        otp_status.value = true;
+        resetForm({
+          values: {
+            mobile: data.mobile,
+            code: "",
+          },
+        });
         ttl.value = res.ttl;
         interval.value = setInterval(() => {
           ttl.value--;
@@ -63,6 +71,7 @@ const onSubmit = handleSubmit(async (data) => {
             }
           }
         }, 1000);
+        toast.success("کد تایید با موفقیت ارسال شد.");
       }
     });
   } else {
@@ -78,17 +87,11 @@ const onSubmit = handleSubmit(async (data) => {
       },
     )
       .then((res) => {
-        // const { data } = useAuth();
-        // const user = ref(data.value);
-        // if (
-        //   !user.value?.national_code_verified ||
-        //   !user.value?.identity_verified
-        // ) {
-        //   router.push({ name: "account-profile-kyc" });
-        // } else {
-        //   fetchProfileAddressList();
-        //   fetchMappedWithAssetsList();
-        // }
+        const { data } = useAuth();
+        const me = ref(data.value);
+        if (me.value?.status !== "approved") {
+          router.push({ name: "account-kyc" });
+        }
         loader.setLoading(false);
       })
       .catch((e) => {
@@ -101,12 +104,50 @@ const goAction = (action: string) => {
   switch (action) {
     case "edit_mobile":
       otp_status.value = false;
-      resetForm();
+      resetForm({
+        values: {
+          mobile: "",
+          code: "",
+        },
+      });
       break;
     default:
       break;
   }
 };
+
+const receiveOtp = async () => {
+  const ac = new AbortController();
+  await navigator.credentials
+    .get({
+      otp: { transport: ["sms"] },
+      signal: ac.signal,
+    } as any)
+    .then((res: any) => {
+      if (res) {
+        values.code = res.code;
+        if (values.code?.length === 6) {
+          onSubmit();
+        }
+      }
+    })
+    .catch((err) => {
+      console.error("An error occurred:", err);
+    });
+  return () => {
+    ac.abort();
+  };
+};
+
+onUnmounted(() => {
+  if (interval.value) {
+    clearInterval(interval.value);
+  }
+});
+
+onMounted(() => {
+  if (isMobile) receiveOtp();
+});
 </script>
 
 <template>
@@ -134,11 +175,12 @@ const goAction = (action: string) => {
                 autocomplete="off"
                 inputmode="numeric"
                 :aria-invalid="!!errors.length"
+                @input="convertPersianNumberToDigits($event)"
               />
               <FieldError v-if="errors.length" :errors="errors" />
               <FieldDescription>
                 ارسال مجدد کد تایید تا
-                <strong> ۱:۴۸ </strong>
+                <strong> {{ secondsToMinutsSeconds(ttl) }} </strong>
               </FieldDescription>
             </Field>
           </VeeField>
@@ -153,6 +195,7 @@ const goAction = (action: string) => {
                 autocomplete="off"
                 inputmode="numeric"
                 :aria-invalid="!!errors.length"
+                @input="convertPersianNumberToDigits($event)"
               />
               <FieldError v-if="errors.length" :errors="errors" />
               <FieldDescription>

@@ -35,9 +35,7 @@ export function useCustomFetch<T>(
       if (request_count.value === 0) {
         loader.setLoading(false);
       }
-      toast.error("Event has been created", {
-        description: "درخواست با موفقیت انجام شد.",
-      });
+      // toast.success("درخواست با موفقیت انجام شد.");
     },
 
     onResponseError(ctx: any) {
@@ -55,14 +53,11 @@ export function useCustomFetch<T>(
           ctx.response?._data?.statusCode === 500
         ) {
           if (ctx.response?._data?.meta?.message_code === "500-2") {
-            toast.error("Event has been created", {
-              description:
-                ctx.response?._data?.meta?.message || "خطایی رخ داده است",
-            });
+            toast.error(
+              ctx.response?._data?.meta?.message || "خطایی رخ داده است",
+            );
           } else {
-            toast.error("Event has been created", {
-              description: ctx.response?.statusText || "خطایی رخ داده است",
-            });
+            toast.error(ctx.response?.statusText || "خطایی رخ داده است");
           }
         } else if (
           ctx.response?.status === 400 ||
@@ -70,32 +65,28 @@ export function useCustomFetch<T>(
           ctx.response?.status === 422
         ) {
           if (typeof ctx.response?._data?.meta?.message === "string") {
-            toast.error("Event has been created", {
-              description:
-                ctx.response?._data?.meta?.message || "خطایی رخ داده است",
-            });
+            toast.error(
+              ctx.response?._data?.meta?.message || "خطایی رخ داده است",
+            );
           } else {
             Object.keys(ctx.response?._data?.meta?.message).forEach((key) => {
-              toast.error("Event has been created", {
-                description:
-                  ctx.response?._data?.meta?.message[key][0] ||
+              toast.error(
+                ctx.response?._data?.meta?.message[key][0] ||
                   "خطایی رخ داده است",
-              });
+              );
             });
           }
         } else if (ctx.response?.status === 401) {
-          toast.error("Event has been created", {
-            description:
-              ctx.response?._data?.meta?.message || "خطایی رخ داده است",
-          });
+          toast.error(
+            ctx.response?._data?.meta?.message || "خطایی رخ داده است",
+          );
           userAuth.value = null;
           location.reload();
           return;
         } else {
-          toast.error("Event has been created", {
-            description:
-              ctx.response?._data?.meta?.message || "خطایی رخ داده است",
-          });
+          toast.error(
+            ctx.response?._data?.meta?.message || "خطایی رخ داده است",
+          );
         }
       }
     },

@@ -14,7 +14,13 @@ export default defineNuxtConfig({
     plugins: [tailwindcss() as any],
   },
 
-  modules: ["shadcn-nuxt", "@nuxt/icon", "@pinia/nuxt"],
+  modules: [
+    "shadcn-nuxt",
+    "@nuxt/icon",
+    "@pinia/nuxt",
+    "@nuxtjs/device",
+    "nuxt-vitalizer",
+  ],
 
   shadcn: {
     /**
@@ -167,6 +173,25 @@ export default defineNuxtConfig({
       firebaseMessagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
       firebaseAppId: process.env.FIREBASE_APP_ID,
       firebaseVapidKey: process.env.FIREBASE_VAPID_KEY,
+    },
+  },
+
+  vitalizer: {
+    disablePrefetchLinks: true,
+    disablePreloadLinks: true,
+    disableStylesheets: "entry",
+  },
+
+  nitro: {
+    compressPublicAssets: {
+      gzip: true,
+      brotli: true,
+    },
+    minify: true,
+    routeRules: {
+      "/app/**": {
+        proxy: `${process.env.BASE_URL}/**`,
+      },
     },
   },
 });
