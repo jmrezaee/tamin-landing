@@ -1,13 +1,33 @@
 <script setup lang="ts">
+const router = useRouter();
+
 const options = ref({
-  title: "جزئیات اعتبار",
-  description: "",
-  type: 3,
-  support_chat: false,
-  notification: false,
-  back: true,
-  filter: false,
-  documents: true,
+  class: "",
+  icon: "",
+  title: {
+    text: "جزئیات اعتبار",
+    class: "text-white",
+  },
+  description: {
+    text: "",
+    class: "text-white",
+  },
+  right: {
+    class: "bg-gray-50/20",
+    icon: "icon:ic-arrow-right",
+    icon_class: "stroke-white",
+    click: () => {
+      router.go(-1);
+    },
+  },
+  left: {
+    class: "bg-gray-50/20",
+    icon: "icon:ic-documents",
+    icon_class: "stroke-white",
+    click: () => {
+      console.log("Left icon clicked");
+    },
+  },
 });
 </script>
 
@@ -23,7 +43,7 @@ const options = ref({
       <div
         class="flex flex-col justify-between rounded-t-4xl h-dvh bg-white overflow-y-scroll hide-scrollbar"
       >
-        <AssetsInvoices class="p-6 h-full" />
+        <InvoiceList class="p-6 h-full" />
       </div>
     </div>
   </div>

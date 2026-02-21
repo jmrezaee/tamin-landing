@@ -1,14 +1,26 @@
 <script setup lang="ts">
+const router = useRouter();
+
 const options = ref({
-  title: "دریافت رمز خرید",
-  description: "",
-  type: 3,
-  support_chat: false,
-  notification: false,
-  back: true,
-  filter: false,
-  documents: false,
-  empty: true,
+  class: "",
+  icon: "",
+  title: {
+    text: "دریافت رمز خرید",
+    class: "text-white",
+  },
+  description: {
+    text: "",
+    class: "text-white",
+  },
+  right: {
+    class: "bg-gray-50/20",
+    icon: "icon:ic-arrow-right",
+    icon_class: "stroke-white",
+    click: () => {
+      router.go(-1);
+    },
+  },
+  left: undefined,
 });
 </script>
 

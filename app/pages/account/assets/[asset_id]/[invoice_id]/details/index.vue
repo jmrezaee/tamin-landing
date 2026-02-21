@@ -1,14 +1,26 @@
 <script setup lang="ts">
+const router = useRouter();
+
 const options = ref({
-  title: "فاکتور خرید شما",
-  description: "",
-  type: 3,
-  support_chat: false,
-  notification: false,
-  back: true,
-  filter: false,
-  documents: false,
-  empty: true,
+  class: "",
+  icon: "",
+  title: {
+    text: "فاکتور خرید شما",
+    class: "text-white",
+  },
+  description: {
+    text: "",
+    class: "text-white",
+  },
+  right: {
+    class: "bg-gray-50/20",
+    icon: "icon:ic-arrow-right",
+    icon_class: "stroke-white",
+    click: () => {
+      router.go(-1);
+    },
+  },
+  left: undefined,
 });
 </script>
 
@@ -21,7 +33,7 @@ const options = ref({
       <div
         class="flex flex-col justify-between rounded-t-4xl h-full bg-white overflow-y-scroll hide-scrollbar"
       >
-        <AssetsInvoiceItems class="p-6 h-full" />
+        <InvoiceItems class="p-6 h-full" />
       </div>
     </div>
   </div>

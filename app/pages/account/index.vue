@@ -1,12 +1,27 @@
 <script setup lang="ts">
 const options = ref({
-  title: "شبکــه ملـی یـارانـه‌هــای متـمرکــز",
-  description: "",
-  type: 1,
-  support_chat: true,
-  notification: true,
-  back: false,
-  filter: false,
+  class: "",
+  icon: "icon:ic-logo-type",
+  title: {
+    text: "شبکــه ملـی یـارانـه‌هــای متـمرکــز",
+    class: "text-black",
+  },
+  description: {
+    text: "",
+    class: "text-black",
+  },
+  right: {
+    class: "bg-white",
+    icon: "icon:ic-support-chat",
+    icon_class: "stroke-purple-700",
+    to: "account-support",
+  },
+  left: {
+    class: "bg-white",
+    icon: "icon:ic-notification",
+    icon_class: "stroke-purple-700",
+    to: "account-notifications",
+  },
 });
 </script>
 

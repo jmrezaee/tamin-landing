@@ -10,76 +10,45 @@ const props = defineProps({
 <template>
   <div
     class="flex flex-row justify-between items-center gap-2 p-4"
-    :class="{ 'bg-white': options.type === 2 }"
+    :class="options.class"
   >
-    <div
-      class="flex justify-center items-center rounded-2xl size-14 bg-white"
-      v-if="options.support_chat"
+    <NuxtLink
+      class="flex justify-center items-center rounded-2xl size-14 cursor-pointer"
+      :class="options.right?.class"
+      :to="options.right?.to ? { name: options.right.to } : undefined"
+      @click.native="options.right?.click ? options.right?.click() : undefined"
+      v-if="options.right"
     >
-      <Icon class="stroke-purple-700" name="icon:ic-support-chat" />
-    </div>
-    <div
-      class="flex justify-center items-center rounded-2xl size-14"
-      :class="{
-        'bg-gray-50': options.type === 1 || options.type === 2,
-        'bg-gray-50/20': options.type === 3,
-      }"
-      v-if="options.back"
-    >
-      <Icon
-        :class="{
-          'stroke-black': options.type === 1 || options.type === 2,
-          'stroke-white': options.type === 3,
-        }"
-        name="icon:ic-arrow-right"
-      />
-    </div>
+      <Icon :class="options.right?.icon_class" :name="options.right?.icon" />
+    </NuxtLink>
+    <div class="size-14" v-else />
     <div class="flex flex-col items-center gap-2 text-center">
-      <Icon name="icon:ic-logo-type" v-if="options.type === 1" />
+      <Icon :name="options.icon" v-if="options.icon" />
       <span
         class="text-base font-semibold"
-        :class="{ 'text-white': options.type === 3 }"
-        v-if="options.type === 2 || options.type === 3"
+        :class="options.title?.class"
+        v-else-if="options.title?.text"
       >
-        {{ options.title }}
+        {{ options.title.text }}
       </span>
       <span
         class="text-xs"
-        :class="{ 'text-white': options.type === 3 }"
-        v-if="options.description"
+        :class="options.description?.class"
+        v-if="options.description?.text"
       >
-        {{ options.description }}
+        {{ options.description.text }}
       </span>
     </div>
-    <div
-      class="flex justify-center items-center rounded-2xl size-14 bg-white"
-      v-if="options.notification"
+    <NuxtLink
+      class="flex justify-center items-center rounded-2xl size-14 cursor-pointer"
+      :class="options.left?.class"
+      :to="options.left?.to ? { name: options.left.to } : undefined"
+      @click.native="options.left?.click ? options.left?.click() : undefined"
+      v-if="options.left"
     >
-      <Icon class="stroke-purple-700" name="icon:ic-notification" />
-    </div>
-    <div
-      class="flex justify-center items-center rounded-2xl size-14 bg-gray-50"
-      v-if="options.filter"
-    >
-      <Icon class="stroke-black" name="icon:ic-filter" />
-    </div>
-    <div
-      class="flex justify-center items-center rounded-2xl size-14"
-      :class="{
-        'bg-gray-50': options.type === 1 || options.type === 2,
-        'bg-gray-50/20': options.type === 3,
-      }"
-      v-if="options.documents"
-    >
-      <Icon
-        :class="{
-          'stroke-black': options.type === 1 || options.type === 2,
-          'stroke-white': options.type === 3,
-        }"
-        name="icon:ic-documents"
-      />
-    </div>
-    <div class="size-14" v-if="options.empty" />
+      <Icon :class="options.left?.icon_class" :name="options.left?.icon" />
+    </NuxtLink>
+    <div class="size-14" v-else />
   </div>
 </template>
 

@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <AssetsInvoiceItem v-for="(item, index) in 32" :item="item" :key="index" />
+    <InvoiceItem v-for="(item, index) in 32" :item="item" :key="index" />
   </div>
 </template>
 
