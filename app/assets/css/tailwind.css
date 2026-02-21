@@ -52,6 +52,13 @@
       @apply hidden;
     }
   }
+
+  .rtl {
+    direction: rtl;
+  }
+  .ltr {
+    direction: ltr;
+  }
 }
 
 :root {

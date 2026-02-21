@@ -15,11 +15,13 @@ const options = ref({
     class="grid grid-cols-1 grid-rows-[88px_1fr_76px] bg-gray-50 h-dvh relative"
   >
     <CommonHeader :options="options" />
-    <div class="flex flex-col justify-between overflow-y-scroll hide-scrollbar">
+    <div class="flex flex-col justify-between h-full">
       <Banner />
-      <Assets class="p-6 rounded-t-4xl h-full bg-white" />
+      <AssetsList
+        class="p-6 rounded-t-4xl h-full bg-white overflow-y-scroll hide-scrollbar"
+      />
     </div>
-    <CommonNavigation />
+    <CommonNavigation class="sticky bottom-0 right-0 left-0" />
   </div>
 </template>
 
