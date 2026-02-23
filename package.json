@@ -1,5 +1,5 @@
 {
-  "name": "shamim-app",
+  "name": "tamin-landing",
   "type": "module",
   "private": true,
   "scripts": {
@@ -31,7 +31,6 @@
     "vue": "^3.5.27",
     "vue-router": "^4.6.4",
     "vue-sonner": "^2.0.9",
-    "vue3-barcode": "^1.0.1",
     "yup": "^1.7.1",
     "zod": "^4.3.6"
   },

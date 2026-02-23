@@ -1,14 +1,10 @@
 <template>
-  <div class="h-dvh bg-gray-50">
-    <main
-      class="relative mx-auto w-full max-w-lg overflow-y-scroll hide-scrollbar"
-    >
-      <section class="h-dvh">
-        <slot />
-      </section>
+  <main>
+    <slot />
+    <ClientOnly>
       <Toaster position="top-center" :richColors="true" />
-    </main>
-  </div>
+    </ClientOnly>
+  </main>
 </template>
 
 <script setup lang="ts">

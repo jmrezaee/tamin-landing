@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
 
-  ssr: false,
+  ssr: true,
 
   devtools: { enabled: true },
 
@@ -46,9 +46,6 @@ export default defineNuxtConfig({
         dir: "./app/assets/icons",
       },
     ],
-    clientBundle: {
-      sizeLimitKb: 1024,
-    },
   },
 
   app: {
@@ -57,8 +54,8 @@ export default defineNuxtConfig({
         lang: "fa",
         dir: "rtl",
       },
-      title: "شمیم",
-      titleTemplate: "%s | شبکه ملی یارانه های متمرکز",
+      title: "سازمان تامین اجتماعی",
+      titleTemplate: "%s | سامانه خرید اعتباری | اقساطی مستمری بگیران",
       link: [
         {
           rel: "icon",
@@ -94,11 +91,12 @@ export default defineNuxtConfig({
         },
         {
           name: "description",
-          content: "شبکه ملی یارانه های متمرکز",
+          content: "سامانه خرید اعتباری | اقساطی مستمری بگیران",
         },
         {
           name: "author",
-          content: "شمیم | شبکه ملی یارانه های متمرکز",
+          content:
+            "سازمان تامین اجتماعی | سامانه خرید اعتباری | اقساطی مستمری بگیران",
         },
         // Twitter
         // Test on: https://cards-dev.twitter.com/validator
@@ -106,18 +104,18 @@ export default defineNuxtConfig({
           name: "twitter:card",
           content: "summary",
         },
-        { name: "twitter:site", content: "شمیم" },
+        { name: "twitter:site", content: "سازمان تامین اجتماعی" },
         {
           name: "twitter:url",
           content: `${process.env.WEB_URL}`,
         },
         {
           name: "twitter:title",
-          content: "شمیم",
+          content: "سازمان تامین اجتماعی",
         },
         {
           name: "twitter:description",
-          content: "شبکه ملی یارانه های متمرکز",
+          content: "سامانه خرید اعتباری | اقساطی مستمری بگیران",
         },
         {
           name: "twitter:image",
@@ -131,7 +129,8 @@ export default defineNuxtConfig({
         },
         {
           property: "og:site_name",
-          content: "شمیم شبکه ملی یارانه های متمرکز",
+          content:
+            "سازمان تامین اجتماعی سامانه خرید اعتباری | اقساطی مستمری بگیران",
         },
         {
           property: "og:url",
@@ -139,11 +138,11 @@ export default defineNuxtConfig({
         },
         {
           property: "og:title",
-          content: "شمیم",
+          content: "سازمان تامین اجتماعی",
         },
         {
           property: "og:description",
-          content: "شبکه ملی یارانه های متمرکز",
+          content: "سامانه خرید اعتباری | اقساطی مستمری بگیران",
         },
         {
           property: "og:image",
@@ -155,7 +154,8 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image:alt",
-          content: "شمیم | شبکه ملی یارانه های متمرکز",
+          content:
+            "سازمان تامین اجتماعی | سامانه خرید اعتباری | اقساطی مستمری بگیران",
         },
       ],
     },
@@ -166,13 +166,6 @@ export default defineNuxtConfig({
       baseUrl: process.env.BASE_URL,
       webUrl: process.env.WEB_URL,
       mode: process.env.MODE,
-      firebaseApiKey: process.env.FIREBASE_API_KEY,
-      firebaseAuthDomain: process.env.FIREBASE_AUTH_DOMAIN,
-      firebaseProjectId: process.env.FIREBASE_PROJECT_ID,
-      firebaseStorageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-      firebaseMessagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-      firebaseAppId: process.env.FIREBASE_APP_ID,
-      firebaseVapidKey: process.env.FIREBASE_VAPID_KEY,
     },
   },
 
