@@ -16,7 +16,8 @@ production:
     - 'git config --global user.name "m.gerami"'
     - 'git config --global user.email "m.gerami@mobtakerteam.com"'
     - "git stash"
-    - "git pull origin master"
+    - "git fetch origin"
+    - "git reset --hard origin/master"
     - "pnpm install"
     - "pnpm run build"
     - "npx pm2 delete 0"
