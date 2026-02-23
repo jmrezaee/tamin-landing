@@ -161,6 +161,10 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    "/": { ssr: true },
+  },
+
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL,
@@ -172,7 +176,6 @@ export default defineNuxtConfig({
   vitalizer: {
     disablePrefetchLinks: true,
     disablePreloadLinks: true,
-    disableStylesheets: "entry",
   },
 
   nitro: {
