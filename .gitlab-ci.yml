@@ -1,0 +1,23 @@
+variables:
+  GIT_STRATEGY: none
+  PROJECT_NAME: tamin-landing
+
+stages:
+  - production
+
+production:
+  only:
+    - master
+  stage: production
+  tags:
+    - master
+  script:
+    - "cd /var/www/projects/tamin-landing/"
+    - 'git config --global user.name "m.gerami"'
+    - 'git config --global user.email "m.gerami@mobtakerteam.com"'
+    - "git stash"
+    - "git pull origin master"
+    - "pnpm install"
+    - "pnpm run build"
+    - "pm2 delete 0"
+    - pm2 start "npm run start" --name minigap-ng3
