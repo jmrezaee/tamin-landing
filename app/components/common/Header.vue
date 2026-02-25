@@ -23,13 +23,8 @@ const navigation_items = ref([
           <span class="text-xs text-blue-500 font-normal">
             تلفن پشتیبانی:
           </span>
-          <a class="text-xs text-blue-700 font-semibold" href="tel:09200002014">
-            ۰۹۲۰۰۰۰۲۰۱۴
-          </a>
-          <span class="text-xs text-blue-700 font-normal"> / </span>
-          <span class="text-xs text-blue-500 font-normal"> (داخلی ۴) </span>
-          <a class="text-xs text-blue-700 font-semibold" href="tel:0216369">
-            ۰۲۱۶۳۶۹
+          <a class="text-xs text-blue-700 font-semibold" href="tel:02132917000">
+            02132917000
           </a>
         </div>
       </div>

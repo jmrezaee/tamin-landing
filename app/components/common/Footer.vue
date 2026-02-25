@@ -18,14 +18,9 @@
             <div class="flex flex-row items-center gap-2">
               <a
                 class="text-base text-white font-semibold"
-                href="tel:09200002014"
+                href="tel:02132917000"
               >
-                ۰۹۲۰۰۰۰۲۰۱۴
-              </a>
-              <span class="text-base text-white font-normal"> / </span>
-              <span class="text-base text-white font-normal"> (داخلی ۴) </span>
-              <a class="text-base text-white font-semibold" href="tel:0216369">
-                ۰۲۱۶۳۶۹
+                02132917000
               </a>
             </div>
           </div>
@@ -77,9 +72,7 @@
                 <Icon class="fill-white" name="icon:ic-footer-rubika" />
                 <span class="text-sm text-white/50 font-normal">
                   حـســـاب مـــــا در
-                  <span class="text-sm text-white font-semibold">
-                    روبیکــا
-                  </span>
+                  <span class="text-sm text-white font-semibold"> تلگرام </span>
                 </span>
               </div>
               <div
@@ -110,7 +103,7 @@
         <div class="w-full h-px bg-white/30"></div>
         <div class="text-center pb-8">
           <span class="text-sm text-white/70 font-medium">
-            کلیه حقوق این وبسایت متعلق به سازمان تامین اجتماعی است.
+            کلیه حقوق این وبسایت متعلق به شرکت ایده بنیان مبتکر پارس است.
           </span>
         </div>
       </div>
