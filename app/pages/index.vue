@@ -4,9 +4,17 @@
   <div>
     <CommonHeader />
     <div class="mx-auto w-full max-w-7xl">
-      <LandingHero />
-      <LandingShops />
-      <LandingSteps />
+      <div class="p-4">
+        <LandingHero />
+        <LandingShops />
+        <LandingSteps />
+        <LandingCategories />
+        <LandingDownload />
+      </div>
+      <LandingNews />
+      <div class="p-4">
+        <LandingFaq />
+      </div>
     </div>
     <CommonFooter />
   </div>

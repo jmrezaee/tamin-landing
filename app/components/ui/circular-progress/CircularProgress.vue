@@ -81,7 +81,7 @@ defineExpose({
       </svg>
       <div class="absolute inset-0 flex items-center justify-center">
         <Icon
-          class="size-7"
+          class="size-5 md:size-7"
           :class="{
             'fill-cyan-400': props.is_active,
             'fill-gray-300': !props.is_active,

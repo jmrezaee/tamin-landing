@@ -35,7 +35,7 @@ onNuxtReady(() => {
 
 <template>
   <div
-    class="flex flex-row items-center gap-4 p-6 rounded-4xl border-2 border-solid"
+    class="flex flex-row items-center gap-4 p-2 md:p-4 lg:p-6 rounded-3xl md:rounded-4xl border-2 border-solid"
     :class="{
       'border-[#F4F8FC] bg-linear-to-r from-[#FFFFFF] to-48% to-[#F4F8FC]':
         item.is_active,
@@ -44,14 +44,14 @@ onNuxtReady(() => {
   >
     <div class="flex justify-center items-center rounded-full size-16">
       <CircularProgress
-        class="size-16"
+        class="size-10 md:size-16"
         ref="circularProgress"
         :icon="item.icon"
         :is_active="item.is_active"
       />
     </div>
     <span
-      class="text-base font-semibold"
+      class="text-xs md:text-sm xl:text-base font-semibold"
       :class="{
         'text-black': item.is_active,
         'text-gray-500': !item.is_active,

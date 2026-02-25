@@ -47,14 +47,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="grid grid-cols-2 auto-rows-auto gap-14 p-20 rounded-4xl bg-white">
-    <div class="flex flex-col gap-10">
-      <div class="flex flex-row justify-between items-end gap-4">
+  <div
+    class="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-4 lg:gap-14 py-8 lg:p-20 rounded-4xl bg-white"
+  >
+    <div class="flex flex-col gap-10 p-4 lg:p-0">
+      <div
+        class="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-end gap-4 text-center lg:text-right"
+      >
         <div class="flex flex-col gap-2">
-          <span class="text-base text-gray-400 font-normal">
+          <span class="text-base text-gray-500 font-normal">
             مراحل ثبت‌نام و دریافت
           </span>
-          <span class="text-xl text-black font-bold">
+          <span class="text-base xl:text-xl text-black font-bold">
             خدمات اعتباری و اقساطی مستمری بگیران
           </span>
         </div>
@@ -68,7 +72,7 @@ onMounted(() => {
           </Button>
         </div>
       </div>
-      <div class="flex flex-col gap-8">
+      <div class="hidden lg:flex flex-col gap-8 invisible lg:visible">
         <LandingStepsItem
           v-for="(item, index) in step_items"
           :key="index"
@@ -76,21 +80,34 @@ onMounted(() => {
         />
       </div>
     </div>
-    <Carousel
-      class="w-full"
-      :opts="{ direction: 'rtl', loop: true }"
-      :plugins="[plugin]"
-    >
-      <CarouselContent>
-        <CarouselItem v-for="(item, index) in step_items" :key="index">
-          <img
-            :src="item.image"
-            :alt="item.title"
-            class="w-full h-auto object-cover rounded-[48px]"
-          />
-        </CarouselItem>
-      </CarouselContent>
-    </Carousel>
+    <div class="flex justify-center items-center">
+      <Carousel
+        class="w-full"
+        :opts="{ direction: 'rtl', loop: true, watchDrag: false }"
+        :plugins="[plugin]"
+      >
+        <CarouselContent>
+          <CarouselItem
+            class="basis-[85%] lg:basis-full"
+            v-for="(item, index) in step_items"
+            :key="index"
+          >
+            <div class="relative">
+              <img
+                :src="item.image"
+                :alt="item.title"
+                class="w-full h-auto object-cover rounded-[28px] lg:rounded-[48px]"
+              />
+              <div
+                class="block lg:hidden p-4 absolute bottom-0 right-0 left-0 visible lg:invisible"
+              >
+                <LandingStepsItem :item="item" />
+              </div>
+            </div>
+          </CarouselItem>
+        </CarouselContent>
+      </Carousel>
+    </div>
   </div>
 </template>
 
