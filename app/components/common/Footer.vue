@@ -13,8 +13,16 @@
               طرح مهرگستر / فروش اعتباری کالا
             </span>
             <span class="text-base text-white/70 font-medium">
-              تلفن پشتیبانی:
+              تلفن پشتیبانی: (داخلی ۴)
             </span>
+            <div class="flex flex-row items-center gap-2">
+              <a
+                class="text-base text-white font-semibold"
+                href="tel:02132917000"
+              >
+                02132917000
+              </a>
+            </div>
           </div>
           <div class="flex flex-row gap-14">
             <div class="flex flex-col gap-4">
