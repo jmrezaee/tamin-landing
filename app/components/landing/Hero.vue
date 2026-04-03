@@ -40,11 +40,11 @@ const feature_items = ref([
       >
         <div class="flex flex-col gap-4">
           <span class="text-xl lg:text-3xl font-black">
-            <span class="text-primary"> اعتبار اجتماعی </span>
+            <span class="text-primary"> اعتبار خرید فارا </span>
             شما برای ما کافیه...
           </span>
           <span class="text-sm lg:text-xl text-gray-500 font-medium">
-            خرید اعتباری و اقساطی ویژه مستمری بگیران سازمان تامین اجتماعی
+            ویژگی مستمری بگیران سازمان تامین اجتماعی در بانک رفاه
           </span>
         </div>
         <div class="flex flex-row items-center gap-4">
@@ -66,7 +66,7 @@ const feature_items = ref([
             </Avatar>
           </div>
           <span class="text-sm lg:text-base text-primary font-semibold">
-            خرید اعتباری از ۱۰۰۰+ فروشگاه
+            خرید اعتباری از ۱۰۰+ فروشگاه
           </span>
         </div>
       </div>

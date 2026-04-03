@@ -14,28 +14,20 @@ const plugin = Autoplay({
 
 const shop_items = ref([
   {
-    name: "افق کوروش",
-    image: "/images/image-carousel-shop-1.webp",
-  },
-  {
-    name: "گندم",
-    image: "/images/image-carousel-shop-2.webp",
+    name: "وال مارکت",
+    image: "/images/image-carousel-shop-6.webp",
   },
   {
     name: "دیلی مارکت",
     image: "/images/image-carousel-shop-3.webp",
   },
   {
-    name: "هایپرمی",
-    image: "/images/image-carousel-shop-4.webp",
+    name: "گندم",
+    image: "/images/image-carousel-shop-2.webp",
   },
   {
     name: "هفت",
     image: "/images/image-carousel-shop-5.webp",
-  },
-  {
-    name: "وال مارکت",
-    image: "/images/image-carousel-shop-6.webp",
   },
 ]);
 </script>
@@ -56,7 +48,7 @@ const shop_items = ref([
         <CarouselItem
           v-for="(item, index) in shop_items"
           :key="index"
-          class="basis-1/3 md:basis-1/4 lg:basis-1/6"
+          class="basis-1/3 md:basis-1/4"
         >
           <img
             :src="item.image"

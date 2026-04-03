@@ -14,19 +14,19 @@ const plugin = Autoplay({
 
 const step_items = ref([
   {
-    title: "ثبت نام غیر حضوری و مشاهده اعتبار",
+    title: "مستمری بگیر سازمان تامین اجتماعی باشد",
     icon: "icon:ic-steps-1",
     is_active: true,
     image: "/images/image-steps-1.webp",
   },
   {
-    title: "مراجعه و خرید از فروشگاه‌های طرف قرارداد",
+    title: "حقوق مستمری خود را در بانک رفاه دریافت نماید",
     icon: "icon:ic-steps-2",
     is_active: false,
     image: "/images/image-steps-2.webp",
   },
   {
-    title: "مشاهده جزئیات خرید و پرداخت اقساط اعتبار",
+    title: "بیش از 6 ماه از زمان بازنشستگی فرد گذشته باشد",
     icon: "icon:ic-steps-3",
     is_active: false,
     image: "/images/image-steps-3.webp",
@@ -52,14 +52,11 @@ onMounted(() => {
   >
     <div class="flex flex-col gap-10 p-4 lg:p-0">
       <div
-        class="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-end gap-4 text-center lg:text-right"
+        class="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-4 text-center lg:text-right"
       >
         <div class="flex flex-col gap-2">
-          <span class="text-base text-gray-500 font-normal">
-            مراحل ثبت‌نام و دریافت
-          </span>
           <span class="text-base xl:text-xl text-black font-bold">
-            خدمات اعتباری و اقساطی مستمری بگیران
+            شرایط دریافت اعتبار خرید از فارا
           </span>
         </div>
         <div class="flex flex-col gap-2">

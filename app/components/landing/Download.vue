@@ -30,12 +30,12 @@ const download_items = ref([
             دانلود اپلیکیشن
           </span>
           <span class="text-base xl:text-xl text-black font-bold">
-            خدمات اعتباری و اقساطی مستمری بگیران
+            خدمات فروش اعتباری و پرداخت اقساطی
           </span>
         </div>
         <span class="text-sm xl:text-lg text-gray-500 font-medium">
-          با استفاده از اپلیکیشن مینی‌پی، کیف پول اعتباری خود را فعال و از بیش
-          از ۸۰0۰ فروشگاه معتبر بصورت اقساطی خرید کنید!
+          با استفاده از اپلیکیشن فارا، حساب اعتباری خود را فعال کرده و از بیش از
+          یکصد فروشگاه معتبر بصورت اقساطی خرید کنید!
         </span>
       </div>
       <div class="grid grid-cols-2 grid-rows-2 gap-8">

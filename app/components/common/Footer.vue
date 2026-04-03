@@ -10,17 +10,14 @@
           <div class="flex flex-col gap-4">
             <Icon class="w-53 h-13" name="icon:logo-type-white" />
             <span class="text-base text-white/70 font-medium">
-              سامانه خرید اعتباری / اقساطی مستمری بگیران
+              سامانه خرید اعتباری و فروش اقساطی
             </span>
             <span class="text-base text-white/70 font-medium">
-              تلفن پشتیبانی:
+              تلفن پشتیبانی: (داخلی ۴)
             </span>
             <div class="flex flex-row items-center gap-2">
-              <a
-                class="text-base text-white font-semibold"
-                href="tel:02132917000"
-              >
-                02132917000
+              <a class="text-base text-white font-semibold" href="tel:0216369">
+                0216369
               </a>
             </div>
           </div>
@@ -58,37 +55,6 @@
               <div
                 class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl cursor-pointer"
               >
-                <Icon class="fill-white" name="icon:ic-footer-instagram" />
-                <span class="text-sm text-white/50 font-normal">
-                  حساب ما در
-                  <span class="text-sm text-white font-semibold">
-                    اینستاگرام
-                  </span>
-                </span>
-              </div>
-              <div
-                class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl cursor-pointer"
-              >
-                <Icon class="fill-white" name="icon:ic-footer-rubika" />
-                <span class="text-sm text-white/50 font-normal">
-                  حـســـاب مـــــا در
-                  <span class="text-sm text-white font-semibold"> تلگرام </span>
-                </span>
-              </div>
-              <div
-                class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl cursor-pointer"
-              >
-                <Icon class="fill-white" name="icon:ic-footer-eeta" />
-                <span class="text-sm text-white/50 font-normal">
-                  حـســــاب مـــــا در
-                  <span class="text-sm text-white font-semibold">
-                    ایـتــــا
-                  </span>
-                </span>
-              </div>
-              <div
-                class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl cursor-pointer"
-              >
                 <Icon class="fill-white" name="icon:ic-footer-bale" />
                 <span class="text-sm text-white/50 font-normal">
                   حـســـاب مـــــا در
@@ -103,7 +69,8 @@
         <div class="w-full h-px bg-white/30"></div>
         <div class="text-center pb-8">
           <span class="text-sm text-white/70 font-medium">
-            کلیه حقوق این وبسایت متعلق به شرکت ایده بنیان مبتکر پارس است.
+            کلیه حقوق این وبسایت متعلق به شرکت فناوری اطلاعات رفاه ایرانیان
+            (فارا) است.
           </span>
         </div>
       </div>

@@ -17,14 +17,14 @@ const navigation_items = ref([
         class="hidden sm:flex flex-row justify-between items-center gap-2 p-4 invisible sm:visible"
       >
         <span class="text-xs text-blue-500 font-medium">
-          سامانه خرید اعتباری / اقساطی مستمری بگیران
+          سامانه خرید اعتباری و پرداخت اقساطی فارا
         </span>
         <div class="flex flex-row justify-end items-center gap-2">
           <span class="text-xs text-blue-500 font-normal">
-            تلفن پشتیبانی:
+            تلفن پشتیبانی: (داخلی ۴)
           </span>
-          <a class="text-xs text-blue-700 font-semibold" href="tel:02132917000">
-            02132917000
+          <a class="text-xs text-blue-700 font-semibold" href="tel:0216369">
+            0216369
           </a>
         </div>
       </div>
