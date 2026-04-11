@@ -7,7 +7,7 @@ const download_items = ref([
   },
   {
     title: "نسخه وب ‌اپلیکیشن",
-    icon: "icon:ic-download-minipay",
+    icon: "icon:ic-download-fara",
   },
 ]);
 </script>
