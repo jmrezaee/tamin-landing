@@ -3,6 +3,7 @@ const download_items = ref([
   {
     title: "دریافت از کــافـه بـازار",
     icon: "icon:ic-download-cafebazaar",
+    to: "https://cafebazaar.ir/app/ir.sfara.club",
   },
   {
     title: "نسخه وب ‌اپلیکیشن",
@@ -31,16 +32,18 @@ const download_items = ref([
         </span>
       </div>
       <div class="grid grid-cols-2 grid-rows-2 gap-8">
-        <div
+        <NuxtLink
           class="flex flex-row items-center gap-3 px-5 py-3 rounded-2xl bg-linear-to-b from-[#14191C] to-[#434749]"
           v-for="(item, index) in download_items"
           :key="index"
+          :to="item.to ? item.to : ''"
+          :target="item.to ? '_blank' : '_self'"
         >
           <Icon class="size-9" :name="item.icon" />
           <span class="text-sm md:text-base text-white font-semibold">
             {{ item.title }}
           </span>
-        </div>
+        </NuxtLink>
       </div>
     </div>
     <div class="flex justify-center items-center">

@@ -28,9 +28,13 @@
               <span class="text-base text-white/70 font-medium">
                 ثبت نام و دریافت اعتبار
               </span>
-              <span class="text-base text-white/70 font-medium">
+              <NuxtLink
+                class="text-base text-white/70 font-medium"
+                to="https://cafebazaar.ir/app/ir.sfara.club"
+                target="_blank"
+              >
                 دریافت اپلیکیشن
-              </span>
+              </NuxtLink>
             </div>
           </div>
           <div
@@ -51,8 +55,10 @@
                   </a>
                 </div>
               </div>
-              <div
+              <NuxtLink
                 class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl cursor-pointer"
+                to="https://ble.ir/clubfara"
+                target="_blank"
               >
                 <Icon class="fill-white" name="icon:ic-footer-bale" />
                 <span class="text-sm text-white/50 font-normal">
@@ -61,7 +67,7 @@
                     بـلـــــــه
                   </span>
                 </span>
-              </div>
+              </NuxtLink>
             </div>
           </div>
         </div>
