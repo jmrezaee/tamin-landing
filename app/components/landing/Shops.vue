@@ -14,6 +14,10 @@ const plugin = Autoplay({
 
 const shop_items = ref([
   {
+    name: "جانبو",
+    image: "/images/image-carousel-shop-7.webp",
+  },
+  {
     name: "وال مارکت",
     image: "/images/image-carousel-shop-6.webp",
   },
@@ -48,7 +52,7 @@ const shop_items = ref([
         <CarouselItem
           v-for="(item, index) in shop_items"
           :key="index"
-          class="basis-1/3 md:basis-1/4"
+          class="basis-1/3 md:basis-1/5"
         >
           <img
             :src="item.image"

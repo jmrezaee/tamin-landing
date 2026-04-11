@@ -22,28 +22,28 @@ const step_items = ref([
   {
     title: "حقوق مستمری خود را در بانک رفاه دریافت نماید",
     icon: "icon:ic-steps-2",
-    is_active: false,
+    is_active: true,
     image: "/images/image-steps-2.webp",
   },
   {
     title: "بیش از 6 ماه از زمان بازنشستگی فرد گذشته باشد",
     icon: "icon:ic-steps-3",
-    is_active: false,
+    is_active: true,
     image: "/images/image-steps-3.webp",
   },
 ]);
 
-onMounted(() => {
-  setInterval(() => {
-    const active_index = step_items.value?.findIndex((item) => item.is_active);
-    if (step_items.value && active_index !== undefined) {
-      step_items.value = step_items.value.map((item, index) => ({
-        ...item,
-        is_active: index === (active_index + 1) % step_items.value.length,
-      }));
-    }
-  }, 10000);
-});
+// onMounted(() => {
+//   setInterval(() => {
+//     const active_index = step_items.value?.findIndex((item) => item.is_active);
+//     if (step_items.value && active_index !== undefined) {
+//       step_items.value = step_items.value.map((item, index) => ({
+//         ...item,
+//         is_active: index === (active_index + 1) % step_items.value.length,
+//       }));
+//     }
+//   }, 10000);
+// });
 </script>
 
 <template>

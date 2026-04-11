@@ -1,16 +1,8 @@
 <script setup lang="ts">
 const download_items = ref([
   {
-    title: "دریافت از گـوگـل‌پلــی",
-    icon: "icon:ic-download-google",
-  },
-  {
     title: "دریافت از کــافـه بـازار",
     icon: "icon:ic-download-cafebazaar",
-  },
-  {
-    title: "دریـافت از مــایکـــت",
-    icon: "icon:ic-download-myket",
   },
   {
     title: "نسخه وب ‌اپلیکیشن",

@@ -52,7 +52,7 @@ const shop_items = ref([
         <CarouselItem
           v-for="(item, index) in shop_items"
           :key="index"
-          class="basis-1/3 lg:basis-1/5"
+          class="basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/5"
         >
           <div
             class="flex flex-col gap-4 p-2 md:p-4 rounded-xl md:rounded-4xl ring-1 ring-inset ring-neutral-100 bg-white"

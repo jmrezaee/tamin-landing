@@ -44,7 +44,7 @@ const feature_items = ref([
             شما برای ما کافیه...
           </span>
           <span class="text-sm lg:text-xl text-gray-500 font-medium">
-            ویژگی مستمری بگیران سازمان تامین اجتماعی در بانک رفاه
+            ویژه‌ی مستمری بگیران سازمان تامین اجتماعی در بانک رفاه
           </span>
         </div>
         <div class="flex flex-row items-center gap-4">
