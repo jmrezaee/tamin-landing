@@ -85,7 +85,9 @@ const faq_items = ref([
         <AccordionTrigger
           class="items-center text-sm md:text-lg font-medium p-6 rounded-[20px] bg-gray-100 [&[data-state=open]_.faq-icon-plus]:hidden [&[data-state=open]_.faq-icon-minus]:block"
         >
-          {{ item.title }}
+          <span class="text-right">
+            {{ item.title }}
+          </span>
           <div
             class="flex justify-center items-center rounded-lg size-8 bg-white"
             slot="icon"

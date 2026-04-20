@@ -64,8 +64,11 @@ const step_items = ref([
             class="text-primary rounded-xl border-blue-100 h-12"
             variant="outline"
             size="lg"
+            as-child
           >
-            لینک ثبت نام
+            <NuxtLink to="https://faraapp.minipay.me" target="_blank">
+              لینک ثبت نام
+            </NuxtLink>
           </Button>
         </div>
       </div>

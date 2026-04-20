@@ -48,8 +48,10 @@ const feature_items = ref([
           </span>
         </div>
         <div class="flex flex-row items-center gap-4">
-          <Button class="rounded-2xl bg-black h-12" size="lg">
-            دریافت اعتبار
+          <Button class="rounded-2xl bg-black h-12" size="lg" as-child>
+            <NuxtLink to="https://faraapp.minipay.me" target="_blank">
+              دریافت اعتبار
+            </NuxtLink>
           </Button>
         </div>
         <div

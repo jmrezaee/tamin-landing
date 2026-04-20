@@ -8,6 +8,7 @@ const download_items = ref([
   {
     title: "نسخه وب ‌اپلیکیشن",
     icon: "icon:ic-download-fara",
+    to: "https://faraapp.minipay.me",
   },
 ]);
 </script>

@@ -25,9 +25,13 @@
             </div>
             <div class="flex flex-col gap-4">
               <span class="text-lg text-white font-semibold">کاربران</span>
-              <span class="text-base text-white/70 font-medium">
+              <NuxtLink
+                class="text-base text-white/70 font-medium"
+                to="https://faraapp.minipay.me"
+                target="_blank"
+              >
                 ثبت نام و دریافت اعتبار
-              </span>
+              </NuxtLink>
               <NuxtLink
                 class="text-base text-white/70 font-medium"
                 to="https://cafebazaar.ir/app/ir.sfara.club"

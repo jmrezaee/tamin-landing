@@ -51,7 +51,11 @@ const navigation_items = ref([
           </NuxtLink>
         </div>
         <div class="flex flex-row justify-end items-center gap-2">
-          <Button class="rounded-xl" size="lg"> ورود / ثبت نام </Button>
+          <Button class="rounded-xl" size="lg" as-child>
+            <NuxtLink to="https://faraapp.minipay.me" target="_blank">
+              ورود / ثبت نام
+            </NuxtLink>
+          </Button>
         </div>
       </div>
     </div>
