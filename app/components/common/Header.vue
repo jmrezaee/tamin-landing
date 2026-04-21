@@ -3,11 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const navigation_items = ref([
   { name: "صفحه اصلی", to: "index", link: true },
-<<<<<<< HEAD
   { name: "مراکز طرف قرارداد", to: "merchants", link: true },
-=======
-  { name: "مراکز طرف قرارداد", to: "#shops", link: false },
->>>>>>> 855af87 (fixed some)
   { name: "درخواست پذیرندگی", to: "#request", link: false },
   { name: "دانلود اپلیکیشن", to: "#download", link: false },
   { name: "سوالات متداول", to: "#faq", link: false },
