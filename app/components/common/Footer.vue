@@ -10,11 +10,7 @@
           <div class="flex flex-col gap-4">
             <Icon class="w-53 h-13" name="icon:logo-type-white" />
             <span class="text-base text-white/70 font-medium">
-<<<<<<< HEAD
               سامانه خرید اعتباری و فروش اقساطی
-=======
-              طرح مهرگستر / فروش اعتباری کالا
->>>>>>> 855af87 (fixed some)
             </span>
           </div>
           <div class="flex flex-row gap-14">
@@ -28,7 +24,6 @@
               </span>
             </div>
             <div class="flex flex-col gap-4">
-<<<<<<< HEAD
               <span class="text-lg text-white font-semibold">کاربران</span>
               <NuxtLink
                 class="text-base text-white/70 font-medium"
@@ -43,31 +38,12 @@
                 target="_blank"
               >
                 دریافت اپلیکیشن
-=======
-              <span class="text-lg text-white font-semibold">نقشه سایت</span>
-              <NuxtLink class="text-base text-white/70 font-medium" to="#faq">
-                سوالات متداول
-              </NuxtLink>
-              <NuxtLink
-                class="text-base text-white/70 font-medium"
-                to="#download"
-              >
-                دانلود اپلیکیشن
-              </NuxtLink>
-              <NuxtLink
-                class="text-base text-white/70 font-medium"
-                to="https://app.minipay.me"
-                target="_blank"
-              >
-                ورود / ثبت نام
->>>>>>> 855af87 (fixed some)
               </NuxtLink>
             </div>
           </div>
           <div
             class="grid-cols-1 sm:col-span-2 lg:col-span-1 flex flex-col gap-4"
           >
-<<<<<<< HEAD
             <span class="text-lg text-white font-semibold"> ارتباط با ما </span>
             <div class="flex flex-col items-start gap-4">
               <div class="flex flex-row items-center gap-2">
@@ -86,52 +62,6 @@
               <NuxtLink
                 class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl cursor-pointer"
                 to="https://ble.ir/clubfara"
-=======
-            <span class="text-lg text-white font-semibold">
-              شبکه‌های اجتماعی
-            </span>
-            <div class="grid grid-cols-2 grid-rows-2 gap-4">
-              <NuxtLink
-                class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl"
-                to="https://www.instagram.com/mini_pay_me"
-                target="_blank"
-              >
-                <Icon class="fill-white" name="icon:ic-footer-instagram" />
-                <span class="text-sm text-white/50 font-normal">
-                  حساب ما در
-                  <span class="text-sm text-white font-semibold">
-                    اینستاگرام
-                  </span>
-                </span>
-              </NuxtLink>
-              <NuxtLink
-                class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl"
-                to="https://t.me/MiniPay_me"
-                target="_blank"
-              >
-                <Icon class="fill-white" name="icon:ic-footer-rubika" />
-                <span class="text-sm text-white/50 font-normal">
-                  حـســـاب مـــــا در
-                  <span class="text-sm text-white font-semibold"> تلگرام </span>
-                </span>
-              </NuxtLink>
-              <NuxtLink
-                class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl"
-                to="https://eitaa.com/MiniPay"
-                target="_blank"
-              >
-                <Icon class="fill-white" name="icon:ic-footer-eeta" />
-                <span class="text-sm text-white/50 font-normal">
-                  حـســــاب مـــــا در
-                  <span class="text-sm text-white font-semibold">
-                    ایـتــــا
-                  </span>
-                </span>
-              </NuxtLink>
-              <NuxtLink
-                class="flex justify-center items-center gap-2 text-white p-2 rounded-lg border border-solid border-white/30 bg-white/15 backdrop-blur-3xl"
-                to="https://ble.ir/join/BzgMF3hvB3"
->>>>>>> 855af87 (fixed some)
                 target="_blank"
               >
                 <Icon class="fill-white" name="icon:ic-footer-bale" />
