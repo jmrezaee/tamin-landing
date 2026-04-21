@@ -25,10 +25,6 @@ const shop_items = ref([
     name: "دیلی مارکت",
     image: "/images/image-carousel-shop-3.webp",
   },
-  // {
-  //   name: "هایپرمی",
-  //   image: "/images/image-carousel-shop-4.webp",
-  // },
   {
     name: "گندم",
     image: "/images/image-carousel-shop-2.webp",
