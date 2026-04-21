@@ -3,7 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const navigation_items = ref([
   { name: "صفحه اصلی", to: "index", link: true },
+<<<<<<< HEAD
   { name: "مراکز طرف قرارداد", to: "merchants", link: true },
+=======
+  { name: "مراکز طرف قرارداد", to: "#shops", link: false },
+>>>>>>> 855af87 (fixed some)
   { name: "درخواست پذیرندگی", to: "#request", link: false },
   { name: "دانلود اپلیکیشن", to: "#download", link: false },
   { name: "سوالات متداول", to: "#faq", link: false },
@@ -17,7 +21,11 @@ const navigation_items = ref([
         class="hidden sm:flex flex-row justify-between items-center gap-2 p-4 invisible sm:visible"
       >
         <span class="text-xs text-blue-500 font-medium">
+<<<<<<< HEAD
           سامانه خرید اعتباری و پرداخت اقساطی فارا
+=======
+          طرح مهرگستر / فروش اعتباری کالا
+>>>>>>> 855af87 (fixed some)
         </span>
         <div class="flex flex-row justify-end items-center gap-2">
           <span class="text-xs text-blue-500 font-normal">
@@ -40,7 +48,7 @@ const navigation_items = ref([
           class="col-span-2 lg:col-span-1 row-start-2 lg:row-start-auto flex flex-row sm:justify-center items-center gap-6 whitespace-nowrap snap-x snap-mandatory overflow-x-auto overscroll-contain hide-scrollbar"
         >
           <NuxtLink
-            class="text-sm text-black font-medium"
+            class="text-sm text-black font-medium cursor-pointer"
             exactActiveClass="text-blue-500"
             v-for="(item, index) in navigation_items"
             :key="index"
@@ -52,7 +60,11 @@ const navigation_items = ref([
         </div>
         <div class="flex flex-row justify-end items-center gap-2">
           <Button class="rounded-xl" size="lg" as-child>
+<<<<<<< HEAD
             <NuxtLink to="https://faraapp.minipay.me" target="_blank">
+=======
+            <NuxtLink to="https://app.minipay.me" target="_blank">
+>>>>>>> 855af87 (fixed some)
               ورود / ثبت نام
             </NuxtLink>
           </Button>

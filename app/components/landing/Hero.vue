@@ -40,18 +40,29 @@ const feature_items = ref([
       >
         <div class="flex flex-col gap-4">
           <span class="text-xl lg:text-3xl font-black">
+<<<<<<< HEAD
             <span class="text-primary"> اعتبار خرید فارا </span>
             شما برای ما کافیه...
           </span>
           <span class="text-sm lg:text-xl text-gray-500 font-medium">
             ویژه‌ی مستمری بگیران سازمان تامین اجتماعی در بانک رفاه
+=======
+            <span class="text-primary"> طرح مهرگستر ... </span>
+          </span>
+          <span class="text-sm lg:text-xl text-gray-500 font-medium">
+            ویژه شاغلین، بازنشستگان و کارمندان سازمان تامین اجتماعی
+>>>>>>> 855af87 (fixed some)
           </span>
         </div>
         <div class="flex flex-row items-center gap-4">
           <Button class="rounded-2xl bg-black h-12" size="lg" as-child>
+<<<<<<< HEAD
             <NuxtLink to="https://faraapp.minipay.me" target="_blank">
               دریافت اعتبار
             </NuxtLink>
+=======
+            <NuxtLink to="#download"> دریافت اعتبار </NuxtLink>
+>>>>>>> 855af87 (fixed some)
           </Button>
         </div>
         <div
@@ -68,7 +79,11 @@ const feature_items = ref([
             </Avatar>
           </div>
           <span class="text-sm lg:text-base text-primary font-semibold">
+<<<<<<< HEAD
             خرید اعتباری از ۱۰۰+ فروشگاه
+=======
+            خرید اعتباری از ۱۰۰۰۰+ فروشگاه
+>>>>>>> 855af87 (fixed some)
           </span>
         </div>
       </div>

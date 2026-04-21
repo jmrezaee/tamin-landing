@@ -6,14 +6,14 @@
     <div class="mx-auto w-full max-w-7xl">
       <div class="p-4">
         <LandingHero />
-        <LandingShops />
-        <LandingSteps />
-        <LandingCategories />
-        <LandingDownload />
+        <LandingShops id="shops" />
+        <LandingSteps id="steps" />
+        <LandingCategories id="categories" />
+        <LandingDownload id="download" />
       </div>
-      <LandingNews />
+      <LandingNews id="news" />
       <div class="p-4">
-        <LandingFaq />
+        <LandingFaq id="faq" />
       </div>
     </div>
     <CommonFooter />

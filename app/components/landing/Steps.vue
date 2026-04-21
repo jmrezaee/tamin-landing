@@ -56,7 +56,11 @@ const step_items = ref([
       >
         <div class="flex flex-col gap-2">
           <span class="text-base xl:text-xl text-black font-bold">
+<<<<<<< HEAD
             شرایط دریافت اعتبار خرید از فارا
+=======
+            اعتبار خرید طرح مهرگستر
+>>>>>>> 855af87 (fixed some)
           </span>
         </div>
         <div class="flex flex-col gap-2">
@@ -66,7 +70,11 @@ const step_items = ref([
             size="lg"
             as-child
           >
+<<<<<<< HEAD
             <NuxtLink to="https://faraapp.minipay.me" target="_blank">
+=======
+            <NuxtLink to="https://app.minipay.me" target="_blank">
+>>>>>>> 855af87 (fixed some)
               لینک ثبت نام
             </NuxtLink>
           </Button>
