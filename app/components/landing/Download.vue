@@ -5,15 +5,22 @@ const download_items = ref([
   //   icon: "icon:ic-download-google",
   // },
   {
+    key: "cafebazaar",
     title: "دریافت از کــافـه بـازار",
     icon: "icon:ic-download-cafebazaar",
-    to: "https://cafebazaar.ir/app/ir.sfara.club",
+    to: "https://cafebazaar.ir/app/me.minipay.app",
+  },
+  {
+    key: "myket",
+    title: "دریـافت از مــایکـــت",
+    icon: "icon:ic-download-myket",
+    to: "https://myket.ir/app/me.minipay.app",
   },
   {
     key: "web",
     title: "نسخه وب ‌اپلیکیشن",
-    icon: "icon:ic-download-fara",
-    to: "https://faraapp.minipay.me",
+    icon: "icon:ic-download-minipay",
+    to: "https://app.minipay.me",
   },
 ]);
 </script>
@@ -33,8 +40,8 @@ const download_items = ref([
           </span>
         </div>
         <span class="text-sm xl:text-lg text-gray-500 font-medium">
-          با استفاده از اپلیکیشن فارا، حساب اعتباری خود را فعال کرده و از بیش از
-          یکصد فروشگاه معتبر بصورت اقساطی خرید کنید!
+          با استفاده از اپلیکیشن مینی‌پی، کیف پول اعتباری خود را فعال و از بیش
+          از ۱۰۰۰۰ فروشگاه معتبر بصورت اقساطی خرید کنید!
         </span>
       </div>
       <div class="grid grid-cols-2 grid-rows-2 gap-8">
