@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 const navigation_items = ref([
   { name: "صفحه اصلی", to: "index", link: true },
-  { name: "مراکز طرف قرارداد", to: "#centers", link: false },
-  { name: "درخواست پذیرندگی", to: "request", link: true },
+  { name: "مراکز طرف قرارداد", to: "merchants", link: true },
+  { name: "درخواست پذیرندگی", to: "#request", link: false },
   { name: "دانلود اپلیکیشن", to: "#download", link: false },
   { name: "سوالات متداول", to: "#faq", link: false },
 ]);

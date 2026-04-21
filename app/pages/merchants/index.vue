@@ -3,6 +3,10 @@
 <template>
   <div>
     <CommonHeader />
+    <div class="p-4 mx-auto w-full max-w-7xl">
+      <ShopList />
+    </div>
+    <CommonFooter />
   </div>
 </template>
 

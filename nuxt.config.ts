@@ -188,6 +188,9 @@ export default defineNuxtConfig({
       "/app/**": {
         proxy: `${process.env.BASE_URL}/**`,
       },
+      "/minipay/**": {
+        proxy: `${process.env.MINIPAY_BASE_URL}/**`,
+      },
     },
   },
 });
