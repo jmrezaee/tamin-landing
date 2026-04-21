@@ -17,7 +17,7 @@ const shopCategorySelect = async (item: IShopCategory) => {
 //   await shopCategory
 //     .fetch({
 //       sort: "asc",
-//       page_size: 99,
+//       size: 99,
 //     })
 //     .then((res: any) => {
 //       if (res) {
@@ -37,7 +37,7 @@ const fetchShop = async () => {
       order_by: "sales_volume",
       sort: "desc",
       // page: page.value,
-      page_size: 999,
+      size: 999,
     })
     .then((res: any) => {
       if (res) {
@@ -49,24 +49,16 @@ const fetchShop = async () => {
 
 const filtered_shop_list = computed(() => {
   return shop_list.value?.filter((i) => {
-    // const matchesCategory =
-    //   !shop_category_selected.value?.id ||
-    //   i.category.id === shop_category_selected.value?.id;
+    const matchesCategory =
+      !shop_category_selected.value?.id ||
+      i.category.id === shop_category_selected.value?.id;
     const matchesSearch =
       !form.q ||
       i.name?.toLowerCase().includes(form.q?.toLowerCase()) ||
       i.display_name?.toLowerCase().includes(form.q?.toLowerCase());
-    // matchesCategory &&
-    return matchesSearch;
+    return matchesCategory && matchesSearch;
   });
 });
-
-const umamiEvent = (item: IShop) => {
-  umTrackEvent("merchant", {
-    event_category: "click",
-    event_label: item.display_name,
-  });
-};
 
 onNuxtReady(async () => {
   await fetchShop();
@@ -96,7 +88,7 @@ onNuxtReady(async () => {
           </FieldGroup>
         </div>
       </div>
-      <!-- <div class="w-full h-px bg-neutral-100"></div>
+      <div class="w-full h-px bg-neutral-100"></div>
       <div class="flex flex-wrap flex-row gap-2">
         <span
           class="flex flex-row items-center gap-1 text-xs px-3 py-2 rounded-2xl border border-solid bg-neutral-100 cursor-pointer whitespace-nowrap snap-start"
@@ -120,12 +112,12 @@ onNuxtReady(async () => {
           </div>
           {{ item.display_name }}
         </span>
-      </div> -->
+      </div>
     </div>
     <div class="flex flex-col gap-4">
       <div class="flex flex-row justify-between items-center gap-2">
         <span class="text-neutral-500 font-semibold">
-          {{ shop_meta?.total }} فروشگاه
+          {{ shop_meta?.pagination.total }} فروشگاه
         </span>
         <div class="flex-1 w-full h-px bg-neutral-100"></div>
       </div>
@@ -138,9 +130,8 @@ onNuxtReady(async () => {
           v-for="(item, index) in filtered_shop_list"
           :key="index"
           :to="{ name: 'merchants-id', params: { id: item.id } }"
-          @click.native="umamiEvent(item)"
         >
-          <div class="grid grid-cols-[auto_1fr] items-center gap-2">
+          <div class="flex flex-row items-center gap-2 overflow-hidden">
             <div
               class="flex justify-center items-center rounded-2xl size-14 bg-neutral-100 overflow-hidden"
             >
@@ -150,19 +141,17 @@ onNuxtReady(async () => {
                 :alt="item.name"
               />
             </div>
-            <div class="flex flex-col gap-2 overflow-hidden">
-              <span class="text-sm font-medium truncate">
-                {{ item.display_name }}
-              </span>
+            <div class="flex flex-col gap-2">
+              <span class="text-sm font-medium">{{ item.name }}</span>
               <div
                 class="flex flex-row gap-2 snap-x snap-mandatory overflow-x-auto overscroll-contain hide-scrollbar"
               >
                 <span
                   class="text-xs text-neutral-500 font-light py-1 px-2 rounded-md bg-neutral-100 whitespace-nowrap snap-start"
-                  v-for="(i, indx) in item.categories"
+                  v-for="(i, indx) in item.tags"
                   :key="indx"
                 >
-                  {{ i.name }}
+                  {{ i.title }}
                 </span>
               </div>
             </div>
