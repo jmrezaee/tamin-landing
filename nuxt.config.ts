@@ -189,8 +189,8 @@ export default defineNuxtConfig({
       "/app/**": {
         proxy: `${process.env.BASE_URL}/**`,
       },
-      "/farapay/**": {
-        proxy: `${process.env.FARAPAY_BASE_URL}${process.env.FARAPAY_API_PREFIX}/**`,
+      "/minipay/**": {
+        proxy: `${process.env.MINIPAY_BASE_URL}/**`,
       },
     },
   },

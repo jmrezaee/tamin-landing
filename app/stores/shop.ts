@@ -6,7 +6,7 @@ export const Shop = defineStore("Shop", {
   actions: {
     async fetch(payload?: any) {
       try {
-        const result = await useCustomFetch<object>("/farapay/shop", {
+        const result = await useCustomFetch<object>("/minipay/shop/list", {
           method: "GET",
           params: payload,
         })
@@ -27,7 +27,7 @@ export const Shop = defineStore("Shop", {
     async show(payload: any) {
       try {
         const result = await useCustomFetch<IShop>(
-          "/farapay/shop/" + payload.shop_id,
+          "/minipay/shop/show/" + payload.shop_id,
           {
             method: "GET",
           },

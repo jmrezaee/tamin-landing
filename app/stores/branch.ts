@@ -6,7 +6,7 @@ export const Branch = defineStore("Branch", {
   actions: {
     async fetch(payload?: any) {
       try {
-        const result = await useCustomFetch<object>("/farapay/branch", {
+        const result = await useCustomFetch<object>("/minipay/branch/list", {
           method: "GET",
           params: payload,
         })
@@ -27,7 +27,7 @@ export const Branch = defineStore("Branch", {
     async show(payload: any) {
       try {
         const result = await useCustomFetch<IBranch>(
-          "/farapay/branch/" + payload.shop_id,
+          "/minipay/branch/show/" + payload.shop_id,
           {
             method: "GET",
           },
