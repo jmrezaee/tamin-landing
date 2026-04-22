@@ -196,11 +196,11 @@ export default defineNuxtConfig({
   },
 
   umami: {
-    id: "5e5b5bd7-2442-41e2-ac84-9adba7b0dff8",
+    id: "c26ab4e6-c499-42d0-82f1-f9ee2e9f02ed",
     host: "https://umami.mobtakertools.ir/",
     autoTrack: true,
     proxy: "cloak",
-    tag: "farapay-landing",
+    tag: "tamin-landing",
     enabled: process.env.MODE === "production" ? true : false,
   },
 });
