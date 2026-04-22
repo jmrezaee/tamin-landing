@@ -51,7 +51,7 @@ onNuxtReady(async () => {
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-4 p-4 rounded-4xl bg-white">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="flex flex-row gap-2">
+        <div class="grid grid-cols-[auto_1fr] gap-2">
           <div
             class="flex justify-center items-center rounded-2xl size-14 bg-neutral-100 overflow-hidden"
           >
@@ -62,7 +62,9 @@ onNuxtReady(async () => {
             />
           </div>
           <div class="flex flex-col gap-2">
-            <span class="text-sm font-medium">{{ shop_show?.name }}</span>
+            <span class="text-sm font-medium">
+              {{ shop_show?.display_name }}
+            </span>
             <div class="flex flex-wrap flex-row gap-2">
               <span
                 class="text-xs text-neutral-500 font-light py-1 px-2 rounded-md bg-neutral-100"
