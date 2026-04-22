@@ -60,6 +60,13 @@ const filtered_shop_list = computed(() => {
   });
 });
 
+const umamiEvent = (item: IShop) => {
+  umTrackEvent("merchant", {
+    event_category: "click",
+    event_label: item.display_name,
+  });
+};
+
 onNuxtReady(async () => {
   await fetchShop();
 });
@@ -128,6 +135,7 @@ onNuxtReady(async () => {
           v-for="(item, index) in filtered_shop_list"
           :key="index"
           :to="{ name: 'merchants-id', params: { id: item.id } }"
+          @click.native="umamiEvent(item)"
         >
           <div class="flex flex-row items-center gap-2 overflow-hidden">
             <div
