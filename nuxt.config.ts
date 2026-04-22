@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/device",
     "nuxt-vitalizer",
+    "nuxt-umami",
   ],
 
   shadcn: {
@@ -192,5 +193,14 @@ export default defineNuxtConfig({
         proxy: `${process.env.MINIPAY_BASE_URL}/**`,
       },
     },
+  },
+
+  umami: {
+    id: "5e5b5bd7-2442-41e2-ac84-9adba7b0dff8",
+    host: "https://umami.mobtakertools.ir/",
+    autoTrack: true,
+    proxy: "cloak",
+    tag: "farapay-landing",
+    enabled: process.env.MODE === "production" ? true : false,
   },
 });

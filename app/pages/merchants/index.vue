@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+onNuxtReady(async () => {
+  umTrackEvent("merchants", {
+    event_category: "engagement",
+    event_label: "merchants",
+  });
+});
+</script>
 
 <template>
   <div>
