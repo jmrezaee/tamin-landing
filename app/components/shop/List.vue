@@ -137,7 +137,7 @@ onNuxtReady(async () => {
           :to="{ name: 'merchants-id', params: { id: item.id } }"
           @click.native="umamiEvent(item)"
         >
-          <div class="flex flex-row items-center gap-2 overflow-hidden">
+          <div class="grid grid-cols-[auto_1fr] items-center gap-2">
             <div
               class="flex justify-center items-center rounded-2xl size-14 bg-neutral-100 overflow-hidden"
             >
@@ -147,8 +147,10 @@ onNuxtReady(async () => {
                 :alt="item.name"
               />
             </div>
-            <div class="flex flex-col gap-2">
-              <span class="text-sm font-medium">{{ item.name }}</span>
+            <div class="flex flex-col gap-2 overflow-hidden">
+              <span class="text-sm font-medium truncate">
+                {{ item.display_name }}
+              </span>
               <div
                 class="flex flex-row gap-2 snap-x snap-mandatory overflow-x-auto overscroll-contain hide-scrollbar"
               >
