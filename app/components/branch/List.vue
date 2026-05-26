@@ -68,10 +68,10 @@ onNuxtReady(async () => {
             <div class="flex flex-wrap flex-row gap-2">
               <span
                 class="text-xs text-neutral-500 font-light py-1 px-2 rounded-md bg-neutral-100"
-                v-for="(i, indx) in shop_show?.tags"
+                v-for="(i, indx) in shop_show?.categories"
                 :key="indx"
               >
-                {{ i.title }}
+                {{ i.name }}
               </span>
             </div>
           </div>
@@ -80,9 +80,7 @@ onNuxtReady(async () => {
           <span class="text-sm text-neutral-500 font-light">
             تعداد شعب فعال:
           </span>
-          <span class="font-bold">
-            {{ branch_meta?.pagination.total }} شعبه
-          </span>
+          <span class="font-bold"> {{ branch_meta?.total }} شعبه </span>
         </div>
         <div class="flex flex-col gap-2">
           <span class="text-sm text-neutral-500 font-light">
@@ -103,20 +101,21 @@ onNuxtReady(async () => {
     </div>
     <div class="flex flex-col gap-4 p-4 rounded-4xl bg-white">
       <div class="flex flex-row justify-between items-center gap-2">
-        <span class="font-bold">
-          لیست شعب ({{ branch_meta?.pagination.total }})
-        </span>
+        <span class="font-bold"> لیست شعب ({{ branch_meta?.total }}) </span>
       </div>
       <Table>
         <TableHeader>
           <TableRow class="border-0! bg-neutral-100">
-            <TableHead
+            <!-- <TableHead
               class="text-sm text-neutral-500 text-center rounded-r-xl"
             >
               استان
             </TableHead>
             <TableHead class="text-sm text-neutral-500 text-center">
               شهر
+            </TableHead> -->
+            <TableHead class="text-sm text-neutral-500 text-center">
+              نام شعبه
             </TableHead>
             <TableHead class="text-sm text-neutral-500 text-center">
               کد شعبه
@@ -133,8 +132,9 @@ onNuxtReady(async () => {
         </TableHeader>
         <TableBody>
           <TableRow v-for="(item, index) in branch_list" :key="index">
-            <TableCell class="text-center">{{ item.city.province }}</TableCell>
-            <TableCell class="text-center">{{ item.city.title }}</TableCell>
+            <!-- <TableCell class="text-center">{{ item.city.province }}</TableCell>
+            <TableCell class="text-center">{{ item.city.title }}</TableCell> -->
+            <TableCell class="text-center">{{ item.name }}</TableCell>
             <TableCell class="text-center">{{ item.code }}</TableCell>
             <TableCell class="text-center">{{ item.address }}</TableCell>
             <TableCell class="text-center">{{ item.phone }}</TableCell>
@@ -143,9 +143,9 @@ onNuxtReady(async () => {
       </Table>
       <Pagination
         v-slot="{ page }"
-        :items-per-page="branch_meta.pagination.per_page"
-        :total="branch_meta.pagination.total"
-        :default-page="branch_meta.pagination.current_page"
+        :items-per-page="branch_meta.per_page"
+        :total="branch_meta.total"
+        :default-page="branch_meta.current_page"
         v-if="branch_meta?.status"
       >
         <PaginationContent v-slot="{ items }">
