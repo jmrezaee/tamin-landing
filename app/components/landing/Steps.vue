@@ -65,7 +65,6 @@ const step_items = ref([
             variant="outline"
             size="lg"
             as-child
-            as-child
           >
             <NuxtLink to="https://app.minipay.me" target="_blank">
               لینک ثبت نام
