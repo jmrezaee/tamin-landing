@@ -111,7 +111,6 @@
                   </span>
                 </span>
               </NuxtLink>
-              </NuxtLink>
             </div>
           </div>
         </div>
