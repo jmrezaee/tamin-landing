@@ -34,14 +34,6 @@ const shop_items = ref([
     image: "/images/image-carousel-shop-7.webp",
   },
   {
-    name: "رفاه",
-    image: "/images/image-carousel-shop-7.webp",
-  },
-  {
-    name: "رفاه",
-    image: "/images/image-carousel-shop-7.webp",
-  },
-  {
     name: "هفت",
     image: "/images/image-carousel-shop-5.webp",
   },
